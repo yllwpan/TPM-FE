@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPM - pertemuan2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+
+    <style>
+
+        h1{
+            font-family: "montserrat", sans-serif;
+        }
+
+
+        /* div{
+            width: 500px;
+            height: 500px;
+            background-color: antiquewhite;
+        } */
+
+
+        .display{
+            display: block;
+        }
+
+
+        .flex{
+            width: 500px;
+            height: 500px;
+            background-color: rgb(65, 125, 99) ;
+            display: flex;
+            /* justify-content: space-between; */
+            /* justify content kiri ke kanan */
+            justify-content: space-around;
+            /* alignt items atas ke bwh */
+            align-items: flex-start;
+
+            /* flex direction -> puter arah */
+            flex-direction: column;
+            /* bwh itu ngubah urutan  */
+            /* flex-direction: column-reverse; */
+
+        }
+
+        /* @keyframes muter {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(90deg);}
+        } */
+
+        @keyframes muter {
+            0%{transform: rotate(0deg);}
+            25%{transform: rotate(90deg);}
+            75%{transform: rotate(180deg); background-color: salmon;}
+           
+            /* skew tu trapesium */
+            /* 100%{transform: skew();} */
+        }
+
+        .transform{
+           animation: muter 2s ;
+        }
+
+
+
+    </style>
+
+
+
+</head>
+<body>
+
+    <h1>pertemuan 2 - tpm</h1>
+    <i class="fa fa-address-book" aria-hidden="true"></i>
+
+    <div>
+
+       <div class="transform" style="background: violet;">me inside div</div>
+
+       <a class="container-panjang transform link-blank" target="blank" style="background: violet; width: 100px;">tipan inside div</a>
+
+       <div class="" style="background: violet;">me inside div</div>
+       <div class="" style="background: violet;">me inside div</div>
+       <span class="" style="background: turquoise;">me inside span</span>
+       <span class="" style="background: turquoise;">me inside span</span>
+       <p>me inside p</p>
+
+       <p>halo</p>
+       <span>halo</span>
+       <section>halooo</section>
+    
+       
+       <div class="flex">
+           <div style="background-color: cadetblue;">ey uy1</div>
+           <div style="background-color: coral;">ey uy2</div>
+           <div style="background-color: darkgreen;">ey uy3</div>
+           <div style="background-color: olivedrab;">ey uy4</div>
+       </div>
+
+       <!-- <div class="animasi">animasi nich</div>
+       <div class="hover">hooooverrrr</div>
+       <div class="animasi1">animasi lagi nich</div>
+       <div class="transform">transformsss</div> -->
+
+       
+    </div>
+
+</body>
+</html>
